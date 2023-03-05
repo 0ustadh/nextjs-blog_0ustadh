@@ -27,7 +27,7 @@ export default function FirstPost() {
 }
 */
 
-export function getPostData(id) {
+export default function getPostData(id) {
   const fullPath = path.join(postsDirectory, `${id}.md`);
   const fileContents = fs.readFileSync(fullPath, 'utf8');
 
